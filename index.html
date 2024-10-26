@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <div class="header">
+                <div class="logo-container">
+                    <img src="logo.png" alt="TechConnect Logo" class="logo">
+                    <span class="brand-name">Tech <br>Connect</span>
+                </div>
+                <div class="enroll">
+                    <span>Are you a new customer?</span>
+                    <a href="#" id="enroll-link">Enroll now</a>
+                </div>
+            </div>
+            <h1>Welcome Back</h1>
+            <p>Sign in to your TechConnect account.</p>
+            <form>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Username">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="password-container">
+                        <input type="password" id="password" placeholder="Password">
+                        <span class="toggle-password" onclick="togglePassword()">Show</span>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <button type="button" onclick="login()">Login</button>
+                <div class="links">
+                    <a href="#">Forgot Username?</a>
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+        <div class="image-section">
+            <img src="office.png" alt="Office Image" class="bg-image">
+        </div>
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="spinner"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
